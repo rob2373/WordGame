@@ -1,0 +1,187 @@
+body{
+    background-color: #b380cc;
+}
+.loader-animation
+{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+#consejo{
+    color: #ffffff;
+    font-size: large;
+}
+.loader-animation p 
+{
+    width: .5rem;
+    height: .5rem;
+    margin: 3rem .5rem;
+    color: #1a1a1a;
+    font-style:  bold italic;
+    font-size: x-large;
+    animation: loader .6s infinite alternate;
+}
+@keyframes loader{
+    to {
+        opacity: .4;
+        transform: translateX(0, -1rem, 0);
+    }
+}
+@keyframes movimiento{
+    0% {
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.loader-animation p:nth-child(2)
+{
+    animation-delay: .2s;
+}
+.loader-animation p:nth-child(3)
+{
+    animation-delay: .4s;
+}
+.loader-animation p:nth-child(4)
+{
+    animation-delay: .6s;
+}
+.loader-animation p:nth-child(5)
+{
+    animation-delay: .8s;
+}
+.loader-animation p:nth-child(6)
+{
+    animation-delay: 1s;
+}
+.loader-animation p:nth-child(7)
+{
+    animation-delay: 1.2s;
+}
+.loader-animation p:nth-child(8)
+{
+    animation-delay: 1.4s;
+}
+.loader-animation p:nth-child(9)
+{
+    animation-delay: 1.6s;
+}
+.loader-animation p:nth-child(10)
+{
+    animation-delay: 1.8s;
+}
+.loader-animation p:nth-child(11)
+{
+    animation-delay: 2s;
+}
+.loader-animation p:nth-child(12)
+{
+    animation-delay: 2.2s;
+}
+
+
+.banner-img
+{
+    animation: movimiento 2.5s linear infinite;
+    overflow: hidden;
+}
+.banner-img img
+{
+    margin-left: 16rem;
+    margin-top: 0;
+    width: 200px;  
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    box-sizing: border-box;
+    
+}
+@media screen and (max-width:400px){
+    .banner-img img
+    {
+        margin-top: 120px;
+        margin-left: 2.4rem;
+        width: 300px;  
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        box-sizing: border-box;
+        
+    }
+}
+@media screen and (max-width:412px){
+    .banner-img img
+    {
+        margin-top: 120px;
+        margin-left: 2.9rem;
+        width: 300px;  
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        box-sizing: border-box;
+        
+    }
+}
+.burbuja
+{
+    border-radius: 50%;
+    background: #ffffff;
+    opacity: .2;
+    position: absolute;
+    bottom: -800;
+    animation: burbujas 3s linear infinite;
+}
+.burbuja:nth-child(1)
+{
+    width: 100px;
+    height: 100px;
+    left: 5%;
+    animation-duration: 4s;
+    animation-delay: 1s;
+}
+.burbuja:nth-child(2)
+{
+    width: 40px;
+    height: 40px;
+    left: 35%;
+    animation-duration: 4s;
+    animation-delay: 3s;
+}
+.burbuja:nth-child(3)
+{
+    width: 30px;
+    height: 30px;
+    left: 55%;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+.burbuja:nth-child(4)
+{
+    width: 60px;
+    height: 60px;
+    left: 75%;
+    animation-duration: 4s;
+    animation-delay: 4s;
+}
+
+@keyframes burbujas
+{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    30%{
+        transform: translateX(30px);
+    }
+    50%{
+        opacity: .4; 
+    }
+    100%{
+        bottom: 100vh;
+        opacity: 0;
+    }
+}

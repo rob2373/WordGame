@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&display=swap');
+
+*{
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    font-family: 'Boogaloo', cursive;
+}
+body{
+    background-color: rgb(179, 128, 204);
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    font-family: 'Boogaloo', cursive;
+}
+#use{
+width: 215px;
+height: 215px;
+margin-top: 2px;
+border: 20px solid #8CBFE6;
+border-radius: 50%;
+border-color: #8CBFE6;
+background: url(cuenta.png);
+}
+
+h1{
+margin-top: 5rem;
+font-size: 64px;
+position: relative;
+font-style: normal;
+text-transform: uppercase;
+color: #000000;
+text-shadow:-2px 2px #ffffff, -2px -2px #ffffff, 2px -2px #ffffff, 2px 2px #f3f3f2, 8px 8px #8CBFE6;
+}
+form{
+    text-align: center;
+    align-items: center;
+    align-content: center;   
+}
+.form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .form label{
+margin-top: 2rem;
+  }
+  .form input {
+    width: 60%;
+    height: 50px;
+    border-color: #000000;
+    border-radius: 40px;
+    border-bottom: 0;
+  }
+  .form button {
+    border: 1px solid #8CBFE6; /*anchura, estilo y color borde*/
+    padding: 10px; /*espacio alrededor texto*/
+    background-color: #8CBFE6; /*color botón*/
+    color: #000000; /*color texto*/
+    text-decoration: none; /*decoración texto*/
+    text-transform: uppercase; /*capitalización texto*/
+    font-family: 'Boogaloo', cursive; /*tipografía texto*/
+    border-radius: 50px; /*bordes redondos*/
+    margin-top: 20px;
+    font-size: 45px;
+    cursor: pointer;
+  }
+  .navbar-brand{
+    border: 1px solid #8CBFE6; /*anchura, estilo y color borde*/
+    padding: 10px; /*espacio alrededor texto*/
+    background-color: #8CBFE6; /*color botón*/
+    color: #000000; /*color texto*/
+    text-decoration: none; /*decoración texto*/
+    text-transform: uppercase; /*capitalización texto*/
+    font-family: 'Boogaloo', cursive; /*tipografía texto*/
+    border-radius: 50px; /*bordes redondos*/
+    margin-top: 20px;
+    font-size: 45px;
+    cursor: pointer;
+  }
+
+  .form .alerta{
+border-top: 0;
+border-bottom: 0;
+  }

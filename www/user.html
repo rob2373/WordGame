@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <!-- CSS only -->
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="css/user.css">
+ 
+    <title>Sopa De Letras</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <h1>BIENVENIDO</h1>
+                <img src="img/us.jpeg" alt="" id="use">
+                <form action="#" class="form">
+                    <label for="firstname" id="defaul">solo 8 caracteres ( solo letras y números)</label>
+                    <label class="alerta" id="escribe" style="display: none;">No escribiste tu nombre de usuario</label>
+                    <label class="alerta" id="borra" style="display: none;">Solo 8 caracteres</label>
+                    <label class="alerta" id="especial" style="display: none;">solo letras y números</label>
+                <input type="text" id="firstname" name="firstname" placeholder="Ingresa nombre de usuario"   required pattern="[A-Za-z0-9]+" title="Letras y números. Tamaño aceptado 8 caracteres"> <br><br>
+             
+                <a id="Cate" href="#"><button type="button" onclick="categoria()">Entrar</button></a>
+                <a id="Rec" href="#"><button type="button" onclick="categoria()">Records</button></a>
+                </form>
+            </div>
+        </div>
+       </div><!-- minlength="8" maxlength="8" 
+      -->
+    
+    
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="js/user.js"></script>
+    <script src="js/pasarUser.js"></script>
+    <script src="cordova.js"></script>
+</body>
+</html>

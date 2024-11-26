@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Boogaloo&display=swap" rel="stylesheet">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- CSS only -->
+  <title>Sopa de letras</title>
+  
+  <body id="cuerpo" style="background-image: url('img/fondo.jpeg'); font-family: 'Boogaloo', cursive;">
+    <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #844ca0;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" id="puntaje" class="ml-5"><img src="img/user.jpeg" alt="user" id="user" width="25" height="auto" class="" style="border-radius: 50%;"> <p id="use" class="mt-1"> User</p> </a> 
+        <a class="navbar-brand" href="#" style="text-align:center ; color: black; font-size:xx-large; text-shadow:-2px 2px#B2D5F3; ">Cine</a>
+        <a class="navbar-brand" id="exit" href="#"> <button class="btn" style="background-color: #603C68;" > <img src="img/exit.png"  alt="" width="40" height="auto"> </button>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row text-center"style="background-color: #B2D5F3; border-radius: 5px; box-shadow: -3px 3px 3px black;">
+        <div id="crono" class="col-lg-11 col-sm-11 text-center">
+          <div id="time" class="row text-center aling-center"> <div class="col-3 mt-1"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-stopwatch" viewBox="0 0 16 16">
+            <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5V5.6z"/>
+            <path d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64a.715.715 0 0 1 .012-.013l.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354a.512.512 0 0 1-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5zM8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3z"/>
+          </svg> </div> <div class="col-2"> <h1 class="reloj" id="Horas" style="display: none;">00</h1> <h1 class="reloj" id="Minutos">00</h1></div>   <div class="col-2"> <h1 class="reloj" id="Segundos">:    00</h1>  <h1 class="reloj" id="Centesimas"  style="display: none;">:00</h1></div></div>  </div></div>
+        </div>
+      </div>
+    </div>
+    <div id="sopaL" class="container mt-4">
+      <div class="row text-center m-1" style="background-color:#D9D9D9;" >
+        <div class="col-1"  id="A1" onclick="prueba('A1')" title="0"></div>
+        <div class="col-1"  id="B1" onclick="prueba('B1')" title="0"></div>
+        <div class="col-1"  id="C1" onclick="prueba('C1')" title="0"></div>
+        <div class="col-1"  id="D1" onclick="prueba('D1')" title="0"></div>
+        <div class="col-1"  id="E1" onclick="prueba('E1')" title="0"></div>
+        <div class="col-1"  id="F1" onclick="prueba('F1')" title="0"></div>
+        <div class="col-1"  id="G1" onclick="prueba('G1')" title="0"></div>
+        <div class="col-1"  id="H1" onclick="prueba('H1')" title="0"></div>
+        <div class="col-1"  id="I1" onclick="prueba('I1')" title="0"></div>
+        <div class="col-1"  id="J1" onclick="prueba('J1')" title="0"></div>
+        <div class="col-1"  id="K1" onclick="prueba('K1')" title="0"></div>
+        <div class="col-1"  id="L1" onclick="prueba('L1')" title="0"></div>
+      </div>
+      <div class="row text-center m-1" style="background-color:#D9D9D9;" >
+        <div class="col-1"  id="A2" onclick="prueba('A2')" title="0"></div>
+        <div class="col-1"  id="B2" onclick="prueba('B2')" title="0"></div>
+        <div class="col-1"  id="C2" onclick="prueba('C2')" title="0"></div>
+        <div class="col-1"  id="D2" onclick="prueba('D2')" title="0"></div>
+        <div class="col-1"  id="E2" onclick="prueba('E2')" title="0"></div>
+        <div class="col-1"  id="F2" onclick="prueba('F2')" title="0"></div>
+        <div class="col-1"  id="G2" onclick="prueba('G2')" title="0"></div>
+        <div class="col-1"  id="H2" onclick="prueba('H2')" title="0"></div>
+        <div class="col-1"  id="I2" onclick="prueba('I2')" title="0"></div>
+        <div class="col-1"  id="J2" onclick="prueba('J2')" title="0"></div>
+        <div class="col-1"  id="K2" onclick="prueba('K2')" title="0"></div>
+        <div class="col-1"  id="L2" onclick="prueba('L2')" title="0"></div>
+      </div>
+      <div class="row text-center m-1" style="background-color:#D9D9D9;" >
+        <div class="col-1"  id="A3" onclick="prueba('A3')" title="0"></div>
+        <div class="col-1"  id="B3" onclick="prueba('B3')" title="0"></div>
+        <div class="col-1"  id="C3" onclick="prueba('C3')" title="0"></div>
+        <div class="col-1"  id="D3" onclick="prueba('D3')" title="0"></div>
+        <div class="col-1"  id="E3" onclick="prueba('E3')" title="0"></div>
+        <div class="col-1"  id="F3" onclick="prueba('F3')" title="0"></div>
+        <div class="col-1"  id="G3" onclick="prueba('G3')" title="0"></div>
+        <div class="col-1"  id="H3" onclick="prueba('H3')" title="0"></div>
+        <div class="col-1"  id="I3" onclick="prueba('I3')" title="0"></div>
+        <div class="col-1"  id="J3" onclick="prueba('J3')" title="0"></div>
+        <div class="col-1"  id="K3" onclick="prueba('K3')" title="0"></div>
+        <div class="col-1"  id="L3" onclick="prueba('L3')" title="0"></div>
+      </div>
+      <div class="row text-center m-1" style="background-color:#D9D9D9;" >
+        <div class="col-1"  id="A4" onclick="prueba('A4')" title="0"> </div>
+        <div class="col-1"  id="B4" onclick="prueba('B4')" title="0"> </div>
+        <div class="col-1"  id="C4" onclick="prueba('C4')" title="0"> </div>
+        <div class="col-1"  id="D4" onclick="prueba('D4')" title="0"> </div>
+        <div class="col-1"  id="E4" onclick="prueba('E4')" title="0"> </div>
+        <div class="col-1"  id="F4" onclick="prueba('F4')" title="0"> </div>
+        <div class="col-1"  id="G4" onclick="prueba('G4')" title="0"> </div>
+        <div class="col-1"  id="H4" onclick="prueba('H4')" title="0"> </div>
+        <div class="col-1"  id="I4" onclick="prueba('I4')" title="0"> </div>
+        <div class="col-1"  id="J4" onclick="prueba('J4')" title="0"> </div>
+        <div class="col-1"  id="K4" onclick="prueba('K4')" title="0"> </div>
+        <div class="col-1"  id="L4" onclick="prueba('L4')" title="0"> </div>
+      </div>
+      <div class="row text-center m-1" style="background-color:#D9D9D9;" >
+        <div class="col-1"  id="A5" onclick="prueba('A5')" title="0"></div>
+        <div class="col-1"  id="B5" onclick="prueba('B5')" title="0"></div>
+        <div class="col-1"  id="C5" onclick="prueba('C5')" title="0"></div>
+        <div class="col-1"  id="D5" onclick="prueba('D5')" title="0"></div>
+        <div class="col-1"  id="E5" onclick="prueba('E5')" title="0"></div>
+        <div class="col-1"  id="F5" onclick="prueba('F5')" title="0"></div>
+        <div class="col-1"  id="G5" onclick="prueba('G5')" title="0"></div>
+        <div class="col-1"  id="H5" onclick="prueba('H5')" title="0"></div>
+        <div class="col-1"  id="I5" onclick="prueba('I5')" title="0"></div>
+        <div class="col-1"  id="J5" onclick="prueba('J5')" title="0"></div>
+        <div class="col-1"  id="K5" onclick="prueba('K5')" title="0"></div>
+        <div class="col-1"  id="L5" onclick="prueba('L5')" title="0"></div>
+      </div>
+      <div class="row text-center m-1" style="background-color:#D9D9D9;" >
+        <div class="col-1" id="A6" onclick="prueba('A6')" title="0"></div>
+        <div class="col-1" id="B6" onclick="prueba('B6')" title="0"></div>
+        <div class="col-1" id="C6" onclick="prueba('C6')" title="0"></div>
+        <div class="col-1" id="D6" onclick="prueba('D6')" title="0"></div>
+        <div class="col-1" id="E6" onclick="prueba('E6')" title="0"></div>
+        <div class="col-1" id="F6" onclick="prueba('F6')" title="0"></div>
+        <div class="col-1" id="G6" onclick="prueba('G6')" title="0"></div>
+        <div class="col-1" id="H6" onclick="prueba('H6')" title="0"></div>
+        <div class="col-1" id="I6" onclick="prueba('I6')" title="0"></div>
+        <div class="col-1" id="J6" onclick="prueba('J6')" title="0"></div>
+        <div class="col-1" id="K6" onclick="prueba('K6')" title="0"></div>
+        <div class="col-1" id="L6" onclick="prueba('L6')" title="0"></div>
+      </div>
+      <div class="row text-center m-1" style="background-color:#D9D9D9;" >
+        <div class="col-1" id="A7" onclick="prueba('A7')" title="0"></div>
+        <div class="col-1" id="B7" onclick="prueba('B7')" title="0"></div>
+        <div class="col-1" id="C7" onclick="prueba('C7')" title="0"></div>
+        <div class="col-1" id="D7" onclick="prueba('D7')" title="0"></div>
+        <div class="col-1" id="E7" onclick="prueba('E7')" title="0"></div>
+        <div class="col-1" id="F7" onclick="prueba('F7')" title="0"></div>
+        <div class="col-1" id="G7" onclick="prueba('G7')" title="0"></div>
+        <div class="col-1" id="H7" onclick="prueba('H7')" title="0"></div>
+        <div class="col-1" id="I7" onclick="prueba('I7')" title="0"></div>
+        <div class="col-1" id="J7" onclick="prueba('J7')" title="0"></div>
+        <div class="col-1" id="K7" onclick="prueba('K7')" title="0"></div>
+        <div class="col-1" id="L7" onclick="prueba('L7')" title="0"></div>
+      </div>
+      <div class="row text-center m-1" style="background-color:#D9D9D9;" >
+        <div class="col-1" id="A8" onclick="prueba('A8')" title="0"></div>
+        <div class="col-1" id="B8" onclick="prueba('B8')" title="0"></div>
+        <div class="col-1" id="C8" onclick="prueba('C8')" title="0"></div>
+        <div class="col-1" id="D8" onclick="prueba('D8')" title="0"></div>
+        <div class="col-1" id="E8" onclick="prueba('E8')" title="0"></div>
+        <div class="col-1" id="F8" onclick="prueba('F8')" title="0"></div>
+        <div class="col-1" id="G8" onclick="prueba('G8')" title="0"></div>
+        <div class="col-1" id="H8" onclick="prueba('H8')" title="0"></div>
+        <div class="col-1" id="I8" onclick="prueba('I8')" title="0"></div>
+        <div class="col-1" id="J8" onclick="prueba('J8')" title="0"></div>
+        <div class="col-1" id="K8" onclick="prueba('K8')" title="0"></div>
+        <div class="col-1" id="L8" onclick="prueba('L8')" title="0"></div>
+      </div>
+      <div class="row text-center m-1" style="background-color:#D9D9D9;" >
+        <div class="col-1" id="A9"  onclick="prueba('A9')" title="0"></div>
+        <div class="col-1"  id="B9" onclick="prueba('B9')" title="0"></div>
+        <div class="col-1"  id="C9" onclick="prueba('C9')" title="0"></div>
+        <div class="col-1"  id="D9" onclick="prueba('D9')" title="0"></div>
+        <div class="col-1"  id="E9" onclick="prueba('E9')" title="0"></div>
+        <div class="col-1"  id="F9" onclick="prueba('F9')" title="0"></div>
+        <div class="col-1"  id="G9" onclick="prueba('G9')" title="0"></div>
+        <div class="col-1"  id="H9" onclick="prueba('H9')" title="0"></div>
+        <div class="col-1"  id="I9" onclick="prueba('I9')" title="0"></div>
+        <div class="col-1"  id="J9" onclick="prueba('J9')" title="0"></div>
+        <div class="col-1"  id="K9" onclick="prueba('K9')" title="0"></div>
+        <div class="col-1"  id="L9" onclick="prueba('L9')" title="0"></div>
+      </div>
+      <div class="row text-center m-1" style="background-color:#D9D9D9;" >
+        <div class="col-1"  id="A10" onclick="prueba('A10')" title="0"></div>
+        <div class="col-1"  id="B10" onclick="prueba('B10')" title="0"></div>
+        <div class="col-1"  id="C10" onclick="prueba('C10')" title="0"></div>
+        <div class="col-1"  id="D10" onclick="prueba('D10')" title="0"></div>
+        <div class="col-1"  id="E10" onclick="prueba('E10')" title="0"></div>
+        <div class="col-1"  id="F10" onclick="prueba('F10')" title="0"></div>
+        <div class="col-1"  id="G10" onclick="prueba('G10')" title="0"></div>
+        <div class="col-1"  id="H10" onclick="prueba('H10')" title="0"></div>
+        <div class="col-1"  id="I10" onclick="prueba('I10')" title="0"></div>
+        <div class="col-1"  id="J10" onclick="prueba('J10')" title="0"></div>
+        <div class="col-1"  id="K10" onclick="prueba('K10')" title="0"></div>
+        <div class="col-1"  id="L10" onclick="prueba('L10')" title="0"></div>
+      </div>
+      <div class="row text-center m-1" style="background-color:#D9D9D9;" >
+        <div class="col-1"  id="A11" onclick="prueba('A11')" title="0"> </div>
+        <div class="col-1"  id="B11" onclick="prueba('B11')" title="0"> </div>
+        <div class="col-1"  id="C11" onclick="prueba('C11')" title="0"> </div>
+        <div class="col-1"  id="D11" onclick="prueba('D11')" title="0"> </div>
+        <div class="col-1"  id="E11" onclick="prueba('E11')" title="0"> </div>
+        <div class="col-1"  id="F11" onclick="prueba('F11')" title="0"> </div>
+        <div class="col-1"  id="G11" onclick="prueba('G11')" title="0"> </div>
+        <div class="col-1"  id="H11" onclick="prueba('H11')" title="0"> </div>
+        <div class="col-1"  id="I11" onclick="prueba('I11')" title="0"> </div>
+        <div class="col-1"  id="J11" onclick="prueba('J11')" title="0"> </div>
+        <div class="col-1"  id="K11" onclick="prueba('K11')" title="0"> </div>
+        <div class="col-1"  id="L11" onclick="prueba('L11')" title="0"> </div>
+      </div>
+      <div class="row text-center m-1" style="background-color:#D9D9D9;" >
+        <div class="col-1"  id="A12" onclick="prueba('A12')" title="0"> </div>
+        <div class="col-1"  id="B12" onclick="prueba('B12')" title="0"> </div>
+        <div class="col-1"  id="C12" onclick="prueba('C12')" title="0"> </div>
+        <div class="col-1"  id="D12" onclick="prueba('D12')" title="0"> </div>
+        <div class="col-1"  id="E12" onclick="prueba('E12')" title="0"> </div>
+        <div class="col-1"  id="F12" onclick="prueba('F12')" title="0"> </div>
+        <div class="col-1"  id="G12" onclick="prueba('G12')" title="0"> </div>
+        <div class="col-1"  id="H12" onclick="prueba('H12')" title="0"> </div>
+        <div class="col-1"  id="I12" onclick="prueba('I12')" title="0"> </div>
+        <div class="col-1"  id="J12" onclick="prueba('J12')" title="0"> </div>
+        <div class="col-1"  id="K12" onclick="prueba('K12')" title="0"> </div>
+        <div class="col-1"  id="L12" onclick="prueba('L12')" title="0"> </div>
+      </div>
+      
+      
+    </div>
+    <div class="container ml-5" style="border-radius: 5px;">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 mt-3">
+          <div class="row m-1"  style="background-color: #B2D5F3;  border-radius: 5px; box-shadow: -5px 5px 5px black;">
+            <div class="col-4 mt-1">
+              <ul>
+                <li>Minions</li>
+                <li>Pinocho</li>
+              </ul>
+            </div>
+            <div class="col-4 mt-1">
+              <ul>
+                <li>Thor</li>
+                <li>Soul</li>
+              </ul>
+            </div>
+            <div class="col-4 mt-1">
+              <ul>
+                <li>Hércules</li>
+                <li>Valiente</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br>
+    <div id="adorno" style=" background: #A5EC5A; border-radius: 50%; width: 200px; height: 200px; margin-left: 65%; position: fixed; box-shadow: -5px 5px 5px  rgba(255, 255, 255, 0.534), 5px -5px 5px #daadff79, -5px -5px 5px  rgba(255, 255, 255, 0.575), 5px 5px 5px rgba(255, 255, 255, 0.63);"> </div>
+    <div id="adorno" style=" background: #A4FAE9; border-radius: 50%; width: 250px; height: 250px; margin-left: -100px; margin: bottom -100px; position: fixed; box-shadow: -5px 5px 5px rgba(255, 255, 255, 0.534), 5px -5px 5px rgba(255, 255, 255, 0.692), -5px -5px 5px rgba(255, 255, 255, 0.575), 5px 5px 5px rgba(255, 255, 255, 0.63);"> </div>      
+    <div id="adorno" style=" background: #FFA2D0; border-radius: 50%; width: 300px; height: 300px; margin-top: 10%; margin-left: 10%; position: fixed; box-shadow: -5px 5px 5px rgba(255, 255, 255, 0.534), 5px -5px 5px rgba(255, 255, 255, 0.692), -5px -5px 5px rgba(255, 255, 255, 0.575), 5px 5px 5px rgba(255, 255, 255, 0.63);"> </div>
+    <div class="container mt-1" style="position: absolute; display: block; margin-top: -50px; ">
+      <div class="row">
+        <button id="lis" onclick="listo()" style="position: absolute; background: #8CBFE6; margin-top: -35px; margin-left: 30%; width: 150px; height: auto;  border-radius: 5px;box-shadow: -5px 5px 5px black;"> Listo! </button>
+      </div>
+    </div>
+    <div id="correcto" class="container ml-2" style="display: none; border-radius: 5px; position: absolute; margin-top: 10px;">
+      <div class="row m-1"  style="background-color: #D5FFD7;  border-radius: 5px; box-shadow: -5px 5px 5px #75FF7C;">
+        <div class="col-12 mt-1 text-center">
+          <h2> Correcto !! <svg class="mb-1"xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+            width="30" height="30"
+            viewBox="0 0 100 100">
+            <circle cx="52" cy="52" r="44" opacity=".35"></circle><circle cx="50" cy="50" r="44" fill="#f2f2f2"></circle><path fill="#f2f2f2" d="M50,91C27.393,91,9,72.607,9,50S27.393,9,50,9s41,18.393,41,41S72.607,91,50,91z"></path><circle cx="50.026" cy="50.026" r="38.026" fill="#96c362"></circle><circle cx="50" cy="50" r="37.5" fill="none" stroke="#40396e" stroke-miterlimit="10" stroke-width="3"></circle><g><path fill="#f2f2f2" d="M42.017,65c-0.767,0-1.534-0.292-2.119-0.877l-10.017-10c-1.173-1.17-1.175-3.07-0.004-4.243 c1.17-1.173,3.07-1.175,4.242-0.003l7.896,7.882l23.881-23.88c1.172-1.172,3.07-1.172,4.242,0c1.172,1.171,1.172,3.071,0,4.242 l-26,26C43.552,64.707,42.784,65,42.017,65z"></path></g>
+          </svg>  </h2>
+        </div>
+      </div>
+    </div>
+    <div id="error" class="container ml-2" style="display: none; border-radius: 5px; position: absolute; margin-top: 10px;">
+      <div class="row m-1" style="background-color: #ffd5d5;  border-radius: 5px; box-shadow: -5px 5px 5px #fa6060;">
+        <div class="col-12 mt-1 text-center">
+          <h2> Incorrecto  :( <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+            width="30" height="30"
+            viewBox="0 0 48 48">
+            <path fill="#f44336" d="M44,24c0,11.045-8.955,20-20,20S4,35.045,4,24S12.955,4,24,4S44,12.955,44,24z"></path><path fill="#fff" d="M29.656,15.516l2.828,2.828l-14.14,14.14l-2.828-2.828L29.656,15.516z"></path><path fill="#fff" d="M32.484,29.656l-2.828,2.828l-14.14-14.14l2.828-2.828L32.484,29.656z"></path>
+          </svg>  </h2>
+        </div>
+      </div>
+    </div>
+    <div id="record" class="container mt-1" style="position: absolute; display: none; margin-top: -50px; ">
+      <div class="row">
+        <div class="col-12">
+          
+          <a id="Lrecord" href="#"> <button type="button" style="position: absolute; background: #8CBFE6; margin-top: 65px; margin-left: 30%; width: 150px; height: auto;  border-radius: 5px;box-shadow: -5px 5px 5px black;"> Ver records </button> </a>
+        </div>
+      </div>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="js/c2.js"></script>
+    <script src="js/pasarUser.js"></script>
+    <!-- <script src="js/efectos.js"></script> -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="cordova.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+  
+  
+  </html>

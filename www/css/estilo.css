@@ -1,0 +1,20 @@
+@media screen and (max-width:400px){
+   #lis{
+      
+       margin-left: rem;
+     
+   }
+   #correcto{
+       margin-left: rem;
+
+   }
+   #error{
+       margin-left: rem;
+
+   }
+   #record{
+       margin-left: rem;
+
+   }
+   
+}
